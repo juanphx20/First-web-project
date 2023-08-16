@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 99vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  z-index: 0;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+}
+
+/* Container Stuff */
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background: linear-gradient(rgb(1, 241, 241), blue);
+}
+
+.two {
+  background: linear-gradient(blue, rgb(3, 3, 9));
+}
+
+.three {
+  background-image: url(SeaCreatures/RockBottom.jpg);
+  background-size: cover;
+}
+
+/* Labels */
+.zoneNamesLight {
+  font-size: 4vh;
+  color: rgb(38, 38, 38);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-variant: small-caps;
+  z-index: 2;
+  position: relative;
+  bottom: 15vh;
+  left: 15vw;
+}
+
+.zoneNamesMed {
+  font-size: 4vh;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-variant: small-caps;
+  z-index: 3;
+}
+
+.zoneNamesDeep {
+  font-size: 9vh;
+  color: rgba(255, 0, 0, 0.907);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-variant: small-caps;
+  z-index: 4;
+  position: relative;
+  bottom: 38vh;
+  right: 36vh;
+  grid-column: 1 / 3;
+}
+
+/* Image Hyperlink Styling*/
+.orcaBox {
+  grid-column: 1 / 3;
+  block-size: 0;
+  position: relative;
+  left: 1vw;
+  bottom: 40vh;
+}
+
+.tunaBox {
+  block-size: 0;
+  grid-column: 4 /6;
+  position: relative;
+  right: 20vw;
+  top: 20vh;
+}
+
+.crabBox {
+  block-size: 0;
+}
+
+.lancetBox {
+  block-size: 0;
+  grid-column: 1 / 3;
+  position: relative;
+  bottom: 10vw;
+}
+
+.lanternfishBox {
+  block-size: 0;
+  grid-column: 7 / 9;
+  position: relative;
+  bottom: 2vh;
+  right: 31vw;
+}
+
+.pelicanEelBox {
+  block-size: 0;
+  position: relative;
+  top: 16vh;
+  left: 10vw;
+}
+
+.bottomBoiBox {
+  block-size: 0;
+  grid-column: 4 / 6;
+  position: relative;
+  right: 42vw;
+  top: 30vh;
+}
+
+.russelBox {
+  block-size: 0;
+  position: relative;
+  top: 40vh;
+}
+/* Image Styling */
+
+img {
+  cursor: pointer;
+  filter: blur(5px);
+  transition: 0.5s all;
+}
+
+img:hover {
+  filter: blur(0);
+}
+
+/* Image Stuff */
+
+#tuna {
+  position: relative;
+  block-size: 33vh;
+  z-index: 2;
+}
+
+#orca {
+  position: relative;
+  block-size: 69vh;
+  z-index: 3;
+}
+
+#crab {
+  position: relative;
+  block-size: 8vw;
+  z-index: 4;
+}
+
+#lancet {
+  position: relative;
+  block-size: 15vh;
+  z-index: 5;
+}
+
+#lanternfish {
+  position: relative;
+  block-size: 15vh;
+  z-index: 6;
+}
+
+#pelicanEel {
+  position: relative;
+  block-size: 12vh;
+  z-index: 7;
+}
+
+#bottomBoi {
+  position: relative;
+  block-size: 15vh;
+}
+
+#russel {
+  block-size: 10vh;
+}
+
+/* Navbar*/
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.663);
+  width: 100%;
+  height: 7vh;
+  z-index: 7;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  float: right;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 0 4vb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
